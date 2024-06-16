@@ -1,0 +1,35 @@
+.material-text,
+.material-delete {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.material-delete {
+    margin-left: auto;
+}
+
+.material-container {
+    display: flex;
+    align-items: center;
+}
+
+.material-edit,
+.material-delete {
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.material-container {
+    background-color: #f0f0f0;
+    margin: 10px 0;
+    padding: 10px;
+    margin-left: 100px;
+    display: flex;
+    align-items: center;
+    width: 1200;
+    font-size: 23px
+}
+
+#main-container {
+    padding-left: 20px;
+}

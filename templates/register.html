@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='registration.css') }}">  
+</head>
+<body>
+    <div id="authModal" class="modal">
+
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>授權碼錯誤，請重新輸入。</p>
+        </div>
+      
+      </div>
+
+    <div class="registration-form">
+        <h2>註冊</h2>
+        <form method="post" action="{{ url_for('register') }}">
+            <div class="form-control">
+                <label for="username">帳號:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-control">
+                <label for="password">密碼:</label>
+                <input type="password" id="password" name="password" required>
+                <span class="toggle-password" id="but">&#128065;</span>
+            </div>
+            <div class="form-control">
+                <label for="auth_code">驗證碼:</label>
+                <input type="text" id="auth_code" name="auth_code" required>
+            </div>
+            <div class="form-control" id="register">
+                <div style="display: block;">
+                <button type="submit">註冊</button>
+                <br>
+            </div>
+            </div>
+        </form>
+                <a href="/"><button>登入</button></a>
+    </div>
+
+<script src="{{ url_for('static', filename='registration.js') }}"></script>
+
+</body>
+</html>

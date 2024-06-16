@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>settinguser</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='settingkey.css') }}">  
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">  
+</head>
+<body>
+
+    <header class="header-main light">
+        <nav>
+          <div class="nav-toggle"></div>
+          <ul class="inline">
+            <li><a href="/index/a" class="active">首頁</a></li>
+            <li><a href="../settinguser" >設定員工資料</a></li>
+            <li><a href="../settingkey" >設定關鍵字</a></li>
+          </ul>
+          <ul class="inline right">
+            <li><a href="/" class="button button-secondary button-m full-width-tablet" role="button">登出</a></li>
+          </ul>
+        </nav>
+      </header>
+
+<div id="addEmployeeModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>新增關鍵字</h2>
+        <form id="addEmployeeForm">
+            <label for="keyword">關鍵字:</label>
+            <input type="text" id="keyword" name="keyword" required><br>
+            <label for="dollors">金額:</label>
+            <input type="text" id="dollors" name="dollors" required><br><br>
+            <button type="submit">提交</button>
+        </form>
+    </div>
+</div>
+
+<div style="padding-left: 100px; padding-top:100px;">
+  <button id="openModalButton" class="button button-primary">新增關鍵字</button>
+</div>
+<br><br>
+<div id="keyword-container">
+</div>
+
+
+    <script src="{{ url_for('static', filename='settingkey.js') }}"></script>
+</body>
+</html>

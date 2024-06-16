@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">      
+    </head>
+    <body>
+        <header class="header-main light">
+            <nav>
+              <div class="nav-toggle"></div>
+              <ul class="inline">
+                <li><a href="/index/a" class="active">首頁</a></li>
+                <li><a href="../settinguser" >設定員工資料</a></li>
+                <li><a href="../settingkey" >設定關鍵字</a></li>
+              </ul>
+              <ul class="inline right">
+                <li><a href="/" class="button button-secondary button-m full-width-tablet" role="button">登出</a></li>
+              </ul>
+            </nav>
+          </header>
+        <div>
+          <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+          <center>
+            <h2>請選擇上方功能</h2>
+          </center>
+        </div>
+        <script src="{{ url_for('static', filename='main.js') }}"></script>
+    </body>
+</html>

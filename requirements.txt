@@ -1,0 +1,4 @@
+Flask
+paho-mqtt
+requests
+line-bot-sdk

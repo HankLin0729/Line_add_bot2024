@@ -1,0 +1,49 @@
+.keyword-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 8px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.keyword-item span {
+    margin-right: 10px;
+}
+
+.keyword-item input[type="text"] {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.material-delete,
+.material-edit {
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.material-delete {
+    color: red;
+}
+
+input {
+    width: 100px;
+}
+
+.keyword-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.keyword-content,
+.dollors-content {
+    flex: 1;
+}
+
+.delete-keyword {
+    cursor: pointer;
+    margin-left: 10px;
+}

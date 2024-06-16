@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>settinguser</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='settinguser.css') }}">  
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">  
+</head>
+<body>
+
+    <header class="header-main light">
+        <nav>
+          <div class="nav-toggle"></div>
+          <ul class="inline">
+            <li><a href="/index/a" class="active">首頁</a></li>
+            <li><a href="../settinguser" >設定員工資料</a></li>
+            <li><a href="../settingkey" >設定關鍵字</a></li>
+          </ul>
+          <ul class="inline right">
+            <li><a href="/" class="button button-secondary button-m full-width-tablet" role="button">登出</a></li>
+          </ul>
+        </nav>
+      </header>
+
+<div id="addEmployeeModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>新增員工群組</h2>
+        <form id="addEmployeeForm">
+            <label for="notify">群組notify:</label>
+            <input type="text" id="notify" name="notify" required><br>
+            <label for="name">員工名稱:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <button type="submit">提交</button>
+        </form>
+    </div>
+</div>
+
+<br><br>
+
+    <div style="padding-left: 100px; padding-top:100px;">
+        <button id="openModalButton" class="button button-primary">新增員工群組</button>
+    </div>
+    <br><br>
+    <div id="materials-container">
+    </div>
+    
+    <script src="{{ url_for('static', filename='settinguser.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+-- username資料表
+CREATE TABLE IF NOT EXISTS user (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    username TEXT UNIQUE NOT NULL, 
+    password_hash TEXT NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS material (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    notify TEXT NOT NULL,
+    name_line TEXT NOT NULL,
+    line_id TEXT NOT NULL,
+    line_no TEXT NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS keyword (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    keyword TEXT NOT NULL,
+    dollors INTEGER NOT NULL
+);
+
+
